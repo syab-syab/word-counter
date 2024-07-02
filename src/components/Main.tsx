@@ -86,7 +86,8 @@ const Main = () => {
   return (
     <Wrapper>
       <CountNum>
-      {word.length}字
+      {/* 入力された文字列からスペースと改行を削除 */}
+      {word.replace(/\r?\n/g, '').replace(/\s/g,"").length}字
       </CountNum>
       <BtnWrapper>
         <Btn>
